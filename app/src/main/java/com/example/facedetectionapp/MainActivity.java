@@ -64,14 +64,10 @@ public class MainActivity extends AppCompatActivity {
 
         cameraView.addCameraKitListener(new CameraKitEventListener() {
             @Override
-            public void onEvent(CameraKitEvent cameraKitEvent) {
-
-            }
+            public void onEvent(CameraKitEvent cameraKitEvent) { }
 
             @Override
-            public void onError(CameraKitError cameraKitError) {
-
-            }
+            public void onError(CameraKitError cameraKitError) { }
 
             @Override
             public void onImage(CameraKitImage cameraKitImage) {
@@ -85,13 +81,10 @@ public class MainActivity extends AppCompatActivity {
                 cameraView.start();
 
                 processFaceDetection(bitmap);
-
             }
 
             @Override
-            public void onVideo(CameraKitVideo cameraKitVideo) {
-
-            }
+            public void onVideo(CameraKitVideo cameraKitVideo) { }
         });
 
     }
@@ -141,7 +134,6 @@ public class MainActivity extends AppCompatActivity {
         super.onPause();
         cameraView.stop();
     }
-
 
     @Override
     protected void onResume() {
